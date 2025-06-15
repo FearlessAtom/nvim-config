@@ -9,6 +9,15 @@ return require('packer').startup(function(use)
         "kristijanhusak/vim-dadbod-completion",
     }
 
+    use
+    {
+        'phaazon/hop.nvim',
+        branch = 'v2',
+        config = function()
+            require'hop'.setup { keys = 'etovxqpdygfblzhckisuran' }
+        end
+    }
+
 	use
     {
         "wbthomason/packer.nvim",
